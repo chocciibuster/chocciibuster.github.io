@@ -1,0 +1,1 @@
+* [schnib](./testindir.md)
