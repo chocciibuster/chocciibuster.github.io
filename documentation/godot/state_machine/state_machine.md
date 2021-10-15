@@ -6,11 +6,12 @@ The `StateMachine` class is intended to be used for, but not limited to, `Charac
 
 ## Setup
 The setup is as follows:
-  1. Create / instance the StateMachine Scene / Node
-  2. Add any possible states as child nodes to the state machine
-  3. Make sure these states all have a script that extends the `State` class
-  4. Make sure the state is checked as active under the properties if you want it to initially be active
-  5. ???
+  1. Create the StateMachine Node
+  2. Make sure it inherits from the `StateMachine.gd` script
+  3. Add any possible states as child nodes to the state machine
+  4. Make sure these states all have a script that extends the `State.gd` class
+  5. Make sure the state is checked as active under the properties if you want it to initially be active
+  6. ???
 
 ## Code explanations
 
