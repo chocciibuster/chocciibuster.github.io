@@ -1,3 +1,5 @@
+![bean](illu1.png)
+
 # StateMachine
 
 The `StateMachine` class is intended to be used for, but not limited to, `Character`.
