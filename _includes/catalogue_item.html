@@ -1,19 +1,27 @@
 <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-  <div>
-    {% if include.sticky == 'true' %}
-    <span class="catalogue-pinned">Pinned &middot;</span>
-    {% endif %}
-    <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-    <h1 class="catalogue-title">{{ post.title }}</h1>
-    <div class="catalogue-line"></div>
+  <div class= "catalogue-item-container">
 
-    <p>
-      {% if post.excerpt_separator %}
-        {{ post.excerpt | strip_html }}
-      {% else %}
-        {{ post.content | strip_html | truncatewords: 30 }}
+    <div class="catalogue-item-column-1">
+      <img class= "post-picture" src= "https://images.unsplash.com/photo-1578956919791-af7615c94b90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=739&q=80">
+    </div>
+
+    <div class="catalogue-item-column-2">
+      {% if include.sticky == 'true' %}
+      <span class="catalogue-pinned">Pinned &middot;</span>
       {% endif %}
-    </p>
+      <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+      <h1 class="catalogue-title">{{ post.title }}</h1>
+      <div class="catalogue-line"></div>
+
+
+      <p>
+        {% if post.excerpt_separator %}
+          {{ post.excerpt | strip_html }}
+        {% else %}
+          {{ post.content | strip_html | truncatewords: 30 }}
+        {% endif %}
+      </p>
+    </div>
 
   </div>
 </a>

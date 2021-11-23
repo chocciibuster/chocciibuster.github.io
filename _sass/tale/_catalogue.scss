@@ -13,6 +13,21 @@
     &:last-child {
       border: 0;
     }
+
+    &-container {
+      display: flex;
+      width: 100%;
+      .post-picture{
+
+      }
+      .catalogue-item-column-1{
+        flex: 1 0 25%;
+      }
+      .catalogue-item-column-2{
+        flex: 1 0 75%;
+        padding-left: 10px;
+      }
+    }
   }
 
   &-pinned {

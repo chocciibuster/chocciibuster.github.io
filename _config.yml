@@ -12,7 +12,7 @@ author:
   email:        jambuzzed@gmail.com
 
 #about - profile picture
-profilepicture: assets/images/pic.jpg
+profilepicture: /assets/images/pic.jpg
 
 # Build settings
 markdown:       kramdown
